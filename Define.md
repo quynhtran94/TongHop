@@ -4,3 +4,7 @@
 <h5>Service Chains in Contrail</h5> The service chaining feature allows the operator to insert dynamic services to control the traffic between two virtual networks. The service chaining works on a basic rule of next-hop stitching.
 
 <h5>Security Zone</h5>A security zone is a collection of interfaces that define a security boundary. Internal network interfaces may be assigned to a security zone named "trust," and external network interfaces may be assigned to a security zone named "untrust." Security policies are then used to control transit traffic between security zones.
+
+<h5>Contrail network policy</h5> It provides security between networks by allow/deny certain traffic. Contrail network policy also provides connectivity between virtual networks.
+
+<h5>OpenStack security groups </h5> allow access between workloads/instances for specified traffic types and rest denied.
