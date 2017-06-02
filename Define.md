@@ -32,3 +32,6 @@ select the service instance VM and the virtual networks for the right and left i
 <h5>Contrail network policy</h5> It provides security between networks by allow/deny certain traffic. Contrail network policy also provides connectivity between virtual networks.
 
 <h5>OpenStack security groups </h5> allow access between workloads/instances for specified traffic types and rest denied.
+
+<h5>Leaf switches</h5> Are popular devices used in data centers to aggregate traffic from server nodes and then connect to the core of the network, consisting of spine switches. In this model, there are only two tiers of switches between the servers and the core network. This popular data center design architecture is known as “leaf-spine” and was popularized as data centers grew in scale.
+<a href="https://www.sdxcentral.com/sdn/definitions/what-are-leaf-switches/">https://www.sdxcentral.com/sdn/definitions/what-are-leaf-switches/</a>
