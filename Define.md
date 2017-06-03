@@ -33,5 +33,12 @@ select the service instance VM and the virtual networks for the right and left i
 
 <h5>OpenStack security groups </h5> allow access between workloads/instances for specified traffic types and rest denied.
 
+<h5>Floating-ip and Simple Gateway</h5>
+
+   <b>Simple gateway</b> let's the virtual machines access underlay network. The access is provided by selective leaking of routes between vrf for virtual network and underlay network. No NAT is involved here.
+
+   <b>Floating-ip</b> allows a VM to borrow IP address from another network. 1:1 NAT is done by vrouter for communication between VM and the borrowed virtual network.
+    The Contrail idea is that each Compute nodes directly connect Gateway router for scaling, efficiency instead of Neutron network node. So Contrail recommends to use Gateway router
+
 <h5>Leaf switches</h5> Are popular devices used in data centers to aggregate traffic from server nodes and then connect to the core of the network, consisting of spine switches. In this model, there are only two tiers of switches between the servers and the core network. This popular data center design architecture is known as “leaf-spine” and was popularized as data centers grew in scale.
 <a href="https://www.sdxcentral.com/sdn/definitions/what-are-leaf-switches/">https://www.sdxcentral.com/sdn/definitions/what-are-leaf-switches/</a>
